@@ -1,0 +1,36 @@
+﻿@page
+@model AWA.Pages.IndexModel
+@{
+    string greeting = "it's my first page...";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Home
+    </title>
+    <meta charset ="utf-8" />
+    <meta name ="viewport" content = "width=device-width, initial-scale=1" />
+</head>
+<body>
+    <h3>
+        this is body chill down!
+    </h3>
+
+    <hr />
+
+    <h1>
+        @(greeting)
+    </h1>
+
+    <hr />
+
+    <div>
+        <h2>
+            @(Model.FullName)
+        </h2>
+    </div>
+
+</body>
+</html>
