@@ -1,36 +1,29 @@
 ﻿@page
 @model AWA.Pages.IndexModel
 @{
-    string greeting = "it's my first page...";
 }
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>
         Home
     </title>
-    <meta charset ="utf-8" />
-    <meta name ="viewport" content = "width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <h3>
-        this is body chill down!
-    </h3>
+    @*@for (int index = 1; index <= 22; index++)
+    {
+        string fileindex = index.ToString()
+        .PadLeft(totalWidth: 3, paddingChar: '0');
 
-    <hr />
+        <a href="~/Page@(fileindex)">Page@(fileindex)</a>
+        <br />
+    }*@
 
-    <h1>
-        @(greeting)
-    </h1>
-
-    <hr />
-
-    <div>
-        <h2>
-            @(Model.FullName)
-        </h2>
-    </div>
+    <img src="~/Images/IMG_20211018_234111_893.jpg" alt="Photo2" />
 
 </body>
 </html>
+
