@@ -3,15 +3,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AWA.Pages
 {
-    public class IndexModel : Infrastructure.BasePageModel
+    public class Page002Model : Infrastructure.BasePageModel
     {
-        public IndexModel() : base()
+        public Page002Model()
         {
 
         }
-       
+
+        public string? FullName { get; set; }
         public void OnGet()
         {
+            FullName = "Artan Arian";
         }
     }
 }

@@ -1,0 +1,65 @@
+﻿@page
+@model AWA.Pages.Page002Model
+@{
+    string fullName = "Artan";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Home
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+    <h1>
+        <b>From Video 1 to 5</b>
+    </h1>
+
+
+    @for (int index = 1; index <= 5; index++)
+    {
+        string fileindex = index.ToString()
+        .PadLeft(totalWidth: 3, paddingChar: '0');
+
+        @*<a href="~/Page@(fileindex)">Page@(fileindex)</a>*@
+        <br />
+        <hr />
+
+        <a asp-page="/Page@(fileindex)">Page@(fileindex)</a>
+    }
+
+    @*<img src="~/Images/IMG_20211018_234111_893.jpg" alt="Photo2" asp-append-version=true />
+
+        <div class="col">
+        <img src="~/Images/images.png" alt="Photo2" asp-append-version=true />
+        </div>*@
+
+    <hr />
+
+    @if (fullName.StartsWith("Artan"))
+    {
+        <text>i'm <i>Artan</i></text>
+
+        <br />
+
+        <span>i'm <u>Artan</u></span>
+
+        <br />
+
+        @:i'm
+        <b>Artan</b>
+    }
+    else
+    {
+        <text>i'm not <b>Artan</b></text>
+        <span>i'm not Artan</span>
+        @:i'm not
+        <b>Artan</b>
+    }
+</body>
+</html>
+
