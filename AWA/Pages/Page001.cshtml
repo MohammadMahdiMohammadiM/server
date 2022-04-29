@@ -1,24 +1,15 @@
 ﻿@page
 @model AWA.Pages.Page1Model
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>
-        page 001
-    </title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
+@{
+    Layout = "_Layout01";
+    ViewData["Title"] = "فروشکاه";
+}
 
-    @*<img src="~/images/Artan.jpg" alt="Artan Arian" asp-append-version=true />*@
 
-    @* <br />
+<h3>
+    فروشگاه
+</h3>
 
-        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Photo1" asp-append-version=true/>
-
-        <br />*@
-
-</body>
-</html>
+<hr />

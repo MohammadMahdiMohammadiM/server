@@ -1,0 +1,82 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>
+        @(ViewData["Title"])
+    </title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black bg-opacity-10">
+            <div class="container-fluid">
+                <img src="~/images/Artan.jpg" width="45" alt="Artan Arian" class="d-inline-block align-middle" asp-append-version=true />
+                <a class="navbar-brand text-danger " href="#"><b><i>A</i>app</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a asp-page="Index" class="nav-link">خانه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="Page001" class="nav-link">فروشگاه</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                منو
+                            </a>
+                            <ul class="dropdown-menu bg-success bg-opacity-50 mt-2" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"><b>حساب کاربری</b></a></li>
+                                <li><a class="dropdown-item" href="#">لیست سفارشات</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#"><u>خروج</u></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="Page002" class="nav-link">مدیریت</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="کلمه ی مورد نظر..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">جستجو</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top:80px; margin-bottom:80px; ">
+        <div class="container-fluid">
+            @(RenderBody())
+        </div>
+    </main>
+
+    <footer class="py-3 bg-dark fixed-bottom" dir="ltr">
+        <div class="container">
+            <span class="text-warning">
+                &copy;2022-ArianTech.Co
+            </span>
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>
