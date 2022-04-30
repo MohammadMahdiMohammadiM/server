@@ -11,7 +11,7 @@ namespace AWA.Pages
         }
         public void OnGet()
         {
-            throw new System.Exception(message:"Unhandled Error!");
+            throw new System.Exception(message: "Unhandled Error!");
         }
     }
 }
