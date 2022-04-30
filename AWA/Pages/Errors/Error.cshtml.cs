@@ -5,7 +5,7 @@ namespace AWA.Pages.Errors
 {
     public class ErrorModel : Infrastructure.BasePageModel
     {
-        public ErrorModel()
+        public ErrorModel() : base()
         {
 
         }
