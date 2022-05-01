@@ -2,17 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-var WebApplicationsOptions =
-    new Microsoft.AspNetCore.Builder.WebApplicationOptions
-    {
-        //EnvironmentName =
-        //Microsoft.Extensions.Hosting.Environments.Development,
-
-        EnvironmentName =
-        Microsoft.Extensions.Hosting.Environments.Production,
-    };
-
-var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(options: WebApplicationsOptions);
+var builder = Microsoft.AspNetCore.Builder.WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 

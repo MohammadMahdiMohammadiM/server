@@ -16,6 +16,7 @@
 
     <link href="~/css/site.css" rel="stylesheet" />
 
+    @(RenderSection(name:"StyleSheets", required:false))
 </head>
 <body>
     <header>
@@ -58,9 +59,12 @@
         </nav>
     </header>
 
-    <main style="margin-top:80px; margin-bottom:80px; ">
+    <main style="margin-top:25px; margin-bottom:25px; ">
         <div class="container-fluid">
             @(RenderBody())
+        </div>
+        <div class="container-fluid text-info">
+            @(RenderSection(name:"MainBody", required:false))
         </div>
     </main>
 
@@ -78,5 +82,6 @@
     <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
+    @(RenderSection(name: "Scripts", required: false))
 </body>
 </html>
