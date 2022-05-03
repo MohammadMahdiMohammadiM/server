@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace AWA.Pages.Errors
+namespace AWA.Pages.Shared
 {
-    public class ErrorModel : PageModel
+    public class _LayoutModel : PageModel
     {
         public void OnGet()
         {

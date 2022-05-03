@@ -7,9 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Errors\Error.cshtml" />
+    <None Include="Pages\Index.cshtml" />
+    <None Include="Pages\Page001.cshtml" />
+    <None Include="Pages\Page002.cshtml" />
+    <None Include="Pages\Shared\Layouts\_Layout01.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_FavoriteIcon.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_Footer.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_Header.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_OpenGraph.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_Scripts.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_Seo.cshtml" />
+    <None Include="Pages\Shared\PartialViews\_StyleSheets.cshtml" />
+    <None Include="Pages\Shared\_Layout.cshtml" />
   </ItemGroup>
 
 </Project>

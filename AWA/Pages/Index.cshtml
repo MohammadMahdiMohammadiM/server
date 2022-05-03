@@ -1,14 +1,21 @@
 ﻿@page
 @model AWA.Pages.IndexModel
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
 @{
-    Layout = "_Layout01";
-    ViewData["Title"] = "Home";
+	var title = "خانه";
+
+	ViewData["Title"] = title;
 }
 
 <h3>
-    خانه
+	@(title)
 </h3>
+
+<hr />
+
+<div class="row">
+	<div class="col">
+		به اولین صفحه از اولین پروژه Artan خوش آمدید!
+	</div>
+</div>
 
 <hr />

@@ -1,8 +1,8 @@
 namespace AWA.Pages
 {
-    public class IndexModel : Infrastructure.BasePageModel
+    public class AboutModel : Infrastructure.BasePageModel
     {
-        public IndexModel() : base()
+        public AboutModel() : base() 
         {
 
         }
